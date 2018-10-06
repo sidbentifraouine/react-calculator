@@ -1,11 +1,20 @@
 .calculator {
-  width: 400px;
   background: #111111;
   border-radius: 30px;
+  width: 400px;
 }
 
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 100px);
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .calculator {
+    width: 90vw;
+  }
+  .keypad {
+    grid-template-rows: repeat(5, 15vh);
+  }
 }
